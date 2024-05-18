@@ -1,11 +1,13 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import { v4 as uuidv4 } from 'uuid';
+import cors from 'cors';
 
 const app = express();
 const PORT = 3000;
 
 app.use(bodyParser.json());
+app.use(cors());
 
 interface Todo {
     id: string;
