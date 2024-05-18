@@ -1,4 +1,3 @@
-import '../styles/Root.css'
 import {
     QueryClient,
     QueryClientProvider,
